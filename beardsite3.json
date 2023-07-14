@@ -48,7 +48,7 @@
             "type": "String"
         },
         "networkSecurityGroups_backendSERVER2_nsg_name": {
-            "defaultValue": "backendSERVER-nsg",
+            "defaultValue": "backendSERVER2-nsg",
             "type": "String"
         },
         "networkSecurityGroups_frontendSERVER_nsg_name": {
