@@ -1,61 +1,21 @@
 {
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.3",
-    "variables": {},
     "variables": {
-        "virtualMachines_backendSERVER_name": {
-            "defaultValue": "backendSERVER",
-            "type": "String"
+        "virtualMachines_backendSERVER_name": "backendSERVER",
+        "virtualMachines_backendSERVER2_name": "backendSERVER2",
+        "virtualMachines_frontendSERVER_name": "frontendSERVER",
+        "virtualNetworks_BeardSite_vnet_name": "BeardSite-vnet",
+        "networkInterfaces_backendserver889_name": "backendserver889",
+        "publicIPAddresses_backendSERVER_ip_name": "backendSERVER-ip",
+        "networkInterfaces_backendserver899_name": "backendserver899",
+        "publicIPAddresses_backendSERVER2_ip_name": "backendSERVER2-ip",
+        "networkInterfaces_frontendserver859_name": "frontendserver859",
+        "publicIPAddresses_frontendSERVER_ip_name": "frontendSERVER-ip",
+        "networkSecurityGroups_backendSERVER_nsg_name": "backendSERVER-nsg",
+        "networkSecurityGroups_backendSERVER2_nsg_name": "backendSERVER2-nsg",
+        "networkSecurityGroups_frontendSERVER_nsg_name": "frontendSERVER-nsg"
         },
-        "virtualMachines_backendSERVER2_name": {
-            "defaultValue": "backendSERVER2",
-            "type": "String"
-        },
-        "virtualMachines_frontendSERVER_name": {
-            "defaultValue": "frontendSERVER",
-            "type": "String"
-        },
-        "virtualNetworks_BeardSite_vnet_name": {
-            "defaultValue": "BeardSite-vnet",
-            "type": "String"
-        },
-        "networkInterfaces_backendserver889_name": {
-            "defaultValue": "backendserver889",
-            "type": "String"
-        },
-        "publicIPAddresses_backendSERVER_ip_name": {
-            "defaultValue": "backendSERVER-ip",
-            "type": "String"
-        },
-        "networkInterfaces_backendserver899_name": {
-            "defaultValue": "backendserver899",
-            "type": "String"
-        },
-        "publicIPAddresses_backendSERVER2_ip_name": {
-            "defaultValue": "backendSERVER2-ip",
-            "type": "String"
-        },
-        "networkInterfaces_frontendserver859_name": {
-            "defaultValue": "frontendserver859",
-            "type": "String"
-        },
-        "publicIPAddresses_frontendSERVER_ip_name": {
-            "defaultValue": "frontendSERVER-ip",
-            "type": "String"
-        },
-        "networkSecurityGroups_backendSERVER_nsg_name": {
-            "defaultValue": "backendSERVER-nsg",
-            "type": "String"
-        },
-        "networkSecurityGroups_backendSERVER2_nsg_name": {
-            "defaultValue": "backendSERVER2-nsg",
-            "type": "String"
-        },
-        "networkSecurityGroups_frontendSERVER_nsg_name": {
-            "defaultValue": "frontendSERVER-nsg",
-            "type": "String"
-        }
-    },
     "resources": [
         {
             "type": "Microsoft.Network/networkSecurityGroups",
